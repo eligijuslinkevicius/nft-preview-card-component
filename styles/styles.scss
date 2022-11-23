@@ -28,9 +28,9 @@ body {
 
 .card {
     margin: auto;
-    width: 350px;
+    width: 325px;
     background: var(--neutral-color-two);
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 1em;
 
     .card-name {
@@ -38,6 +38,11 @@ body {
         font-weight: 600;
         color: var(--neutral-color-four);
         margin: 1rem 0;
+
+        &:hover {
+            color: var(--primary-color-two);
+            cursor: pointer;
+        }
     }
 
     .card-description {
@@ -49,9 +54,14 @@ body {
     }
 
     .card-image {
+        position: relative;
         width: 100%;
         object-fit: contain;
         border-radius: 1em;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
     
     .price-and-date {
@@ -61,34 +71,34 @@ body {
         margin: 1rem 0;
 
         .price {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            color: var(--primary-color-two);
-
             .ethereum {
-                margin-right: 5px;
+                margin-right: 3px;
                 vertical-align: middle;
             }
 
             p {
                 display: inline-block;
                 vertical-align: middle;
+                font-family: 'Outfit', sans-serif;
+                font-weight: 600;
+                color: var(--primary-color-two);
+                font-size: 0.8rem;
             }
         }
 
         .date {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 400;
-            color: var(--primary-color-one);
-
             .clock {
-                margin-right: 5px;
+                margin-right: 3px;
                 vertical-align: middle;
             }
 
             p {
                 display: inline-block;
                 vertical-align: middle;
+                font-family: 'Outfit', sans-serif;
+                font-weight: 400;
+                color: var(--primary-color-one);
+                font-size: 0.8rem;
             }
         }
     }
@@ -103,17 +113,22 @@ body {
             font-family: 'Outfit', sans-serif;
             font-weight: 300;
             color: var(--primary-color-one);
-            font-size: 1rem;
+            font-size: 0.8rem;
             
             span {
                 color: white;
+
+                &:hover {
+                    color: var(--primary-color-two);
+                    cursor: pointer;
+                }
             }
         }
     }
 
     .avatar {
         display: inline-block;
-        width: 50px;
+        width: 30px;
         border: 1px solid white;
         border-radius: 50%;
     }
@@ -126,13 +141,19 @@ body {
 
 }
 
-.attribution {
-    font-size: 11px;
+
+footer {
     position: absolute;
-    text-align: center;
     width: 100%;
     bottom: 0;
     margin-bottom: 1rem;
+}
+.attribution {
+    font-size: 11px;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
 }
 
 .attribution a {

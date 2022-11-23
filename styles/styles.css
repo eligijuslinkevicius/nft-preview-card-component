@@ -27,9 +27,9 @@ body {
 
 .card {
   margin: auto;
-  width: 350px;
+  width: 325px;
   background: var(--neutral-color-two);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 1em;
 }
 .card .card-name {
@@ -37,6 +37,10 @@ body {
   font-weight: 600;
   color: var(--neutral-color-four);
   margin: 1rem 0;
+}
+.card .card-name:hover {
+  color: var(--primary-color-two);
+  cursor: pointer;
 }
 .card .card-description {
   font-family: "Outfit", sans-serif;
@@ -46,10 +50,14 @@ body {
   font-size: 1rem;
 }
 .card .card-image {
+  position: relative;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 1em;
+}
+.card .card-image:hover {
+  cursor: pointer;
 }
 .card .price-and-date {
   display: flex;
@@ -57,31 +65,29 @@ body {
   align-items: center;
   margin: 1rem 0;
 }
-.card .price-and-date .price {
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  color: var(--primary-color-two);
-}
 .card .price-and-date .price .ethereum {
-  margin-right: 5px;
+  margin-right: 3px;
   vertical-align: middle;
 }
 .card .price-and-date .price p {
   display: inline-block;
   vertical-align: middle;
-}
-.card .price-and-date .date {
   font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  color: var(--primary-color-one);
+  font-weight: 600;
+  color: var(--primary-color-two);
+  font-size: 0.8rem;
 }
 .card .price-and-date .date .clock {
-  margin-right: 5px;
+  margin-right: 3px;
   vertical-align: middle;
 }
 .card .price-and-date .date p {
   display: inline-block;
   vertical-align: middle;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: var(--primary-color-one);
+  font-size: 0.8rem;
 }
 .card .author {
   display: flex;
@@ -93,14 +99,18 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   color: var(--primary-color-one);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .card .author p span {
   color: white;
 }
+.card .author p span:hover {
+  color: var(--primary-color-two);
+  cursor: pointer;
+}
 .card .avatar {
   display: inline-block;
-  width: 50px;
+  width: 30px;
   border: 1px solid white;
   border-radius: 50%;
 }
@@ -110,13 +120,19 @@ body {
   margin: 1.5rem 0;
 }
 
-.attribution {
-  font-size: 11px;
+footer {
   position: absolute;
-  text-align: center;
   width: 100%;
   bottom: 0;
   margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 .attribution a {
